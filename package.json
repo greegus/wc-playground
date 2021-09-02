@@ -1,0 +1,29 @@
+{
+  "name": "wc-playground",
+  "version": "0.0.0",
+  "files": ["dist"],
+  "main": "./dist/wc-playground.umd.js",
+  "module": "./dist/wc-playground.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wc-playground.es.js",
+      "require": "./dist/wc-playground.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.2",
+    "vue-tsc": "^0.2.2"
+  }
+}
